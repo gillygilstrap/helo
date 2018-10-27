@@ -1,0 +1,66 @@
+.super-div {
+    background: rgb(58, 187, 58);
+    width: 100%;
+
+}
+.dash-container {
+    display: flex;
+    margin: 50px auto 0 auto;
+
+    width: 75%;
+    flex-direction: column;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    background: rgb(110, 181, 214);
+}
+.search-group {
+    height: 24px;
+}
+.search-group input, button, i {
+    height: 100%;
+
+}
+
+.search-group input {
+    width: 800px;
+    margin-right: 5px;
+    padding-left: 5px;
+}
+.search-group i {
+    font-size: 125%;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+.my-posts {
+    display: flex;
+    align-items: center
+}
+
+.post-box {
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+    background: rgb(110, 181, 214);
+    margin-top: 30px;
+}
+
+.single-post {
+    display: flex;
+    width: 100%;
+    background: yellow;
+    margin: 0 auto;
+    padding: 16px;
+    justify-content: space-between;
+}
+.post-user-box {
+    display: flex;
+}
+.post-user-box img {
+    width: 70px;
+    height: 70px;
+}

@@ -1,29 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { loopback } from 'ip';
 import Nav from './components/Nav/Nav'
-import Post from './components/Post/Post'
-import Dashboard from './components/Dashboard/Dashboard'
-import Auth from './components/Auth/Auth'
-import Form from './components/Form/Form'
+import routes from './routes';
+import { withRouter } from 'react-router'
 
 class App extends Component {
+  constructor(props) {
+    super();
+  }
   
   render() {
+    // console.log(this.props)
     return (
-      <div className="App">
-        <Nav />
-        <Auth />
-        <Dashboard />
-        <Form />
-        <Post />
+      <div className="app">
+        <Nav pathName={this.props.location.pathname}/>
+        {routes}
       </div>
     );
   }
 }
 
-export default App;
+export default withRouter(App);
 
 
 
